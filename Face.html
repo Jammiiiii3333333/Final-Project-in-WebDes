@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="Products.css">
+	<title> Bebi Cosmetics </title>
+</head>
+<body>
+
+<!-- Bebi - sidebar -->
+<header>
+
+    <div class="t-side">
+        <div class="t-logo"></div>
+        <ul class="main">
+
+            <li>
+                <a href="Products.html">
+                    <i class='bx bxs-dashboard'></i>
+                    <span>Products</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="Cart.html">
+                    <i class='bx bxs-cart' ></i>
+                    <span>Cart</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="Front Page.html">
+                    <i class='bx bxs-user-circle' ></i>
+                    <span>Home</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="support.html">
+                    <i class='bx bx-support'></i>
+                    <span>Support</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+</header>
+<!-- Bebi - Products -->
+
+<section class="dash">
+    <div class="main-content">
+        <div class="dash-title">
+            <span>Bebi Cosmetics</span>
+            <h2>Products</h2>
+        </div>
+
+        <hr>
+    </div>
+
+
+    <div class="container">
+            <div class="product-container">
+                <div class="product">
+                    <img src="Face.jpg" alt="Face">
+                    <div class="product-info">
+                        <p>Face</p>
+                        <div class="product-buttons">
+                            <a href="#" class="add-to-cart" onclick="addToCart('Foundation', '$19.00', '5.jpg')">Add to Cart</a>
+                            <button class="view-product" onclick="showMessage('Foundation', '$19.00')">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="6.jpg" alt="Concealer">
+                    <div class="product-info">
+                        <p>Concealer</p>
+                        <p>$8.99</p>
+                        <div class="product-buttons">
+                            <a href="#" class="add-to-cart" onclick="addToCart('Concealer', '$8.99', '6.jpg')">Add to Cart</a>
+                            <button class="view-product" onclick="showMessage('Concealer', '$8.99')">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="7.jpg" alt="Blush On">
+                    <div class="product-info">
+                        <p>Blush On</p>
+                        <p>$12.99</p>
+                        <div class="product-buttons">
+                            <a href="#" class="add-to-cart" onclick="addToCart('Blush On', '$12.99', '7.jpg')">Add to Cart</a>
+                            <button class="view-product" onclick="showMessage('Blush On', '$12.99')">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="8.jpg" alt="Contour">
+                    <div class="product-info">
+                        <p>Contour</p>
+                        <p>$15.99</p>
+                        <div class="product-buttons">
+                            <a href="#" class="add-to-cart" onclick="addToCart('Contour', '$15.99', '8.jpg')">Add to Cart</a>
+                            <button class="view-product" onclick="showMessage('Contour', '$15.99')">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>

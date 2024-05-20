@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--grey: #F1F0F6;
+	--dark-grey: #8D8D8D;
+	--light: #fff;
+	--dark: #000;
+	--green: #81D43A;
+	--light-green: #E3FFCB;
+	--blue: #1775F1;
+	--light-blue: #D0E4FF;
+	--dark-blue: #0C5FCD;
+	--red: #FC3B56;
+    --fade-color: #257b91;
+
+	--first: #DAE6FF;
+    --design: #3876BF;
+    --header-one: #E9F0FF;
+    --header-two: #CADDFF;
+    --design-two: #8EACCD;
+    --design-three: #0654BC;
+    --design-four: #0731AC;
+
+    --p-font: 15px;
+    --text-color: #000000;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	display: flex;
+	background: var(--header-one);
+	scroll-behavior: smooth;	
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+/* SIDEBAR */
+.t-side {
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 110px;
+	height: 100vh;
+	position: sticky;
+	padding: 0 1.7rem;
+	color: var(--design-four);
+	overflow: hidden;
+	transition: all 0.5s linear;
+	background: var(--header-two);
+}
+
+.t-side:hover {
+	width: 260px;
+	transition: 0.5s ease-in-out;
+}
+
+.t-logo {
+	height: 60px;
+	padding: 16px;
+}
+
+.main {
+	height: 80%;
+	position: relative;
+	list-style: none;
+	padding: 0;
+}
+
+.main li {
+	padding : 1rem;
+	margin: 8px 0;
+	border-radius: 8px;
+	transition: all 0.5s ease-in-out;
+
+}
+
+.main li:hover,
+.active {
+	background: var(--light);
+}
+
+.main a {
+	color: var(--design-four);
+	align-items: center;
+	font-size: 15px;;
+	display: flex;
+	gap: 1.5rem;
+}
+
+.main a span {
+	overflow: hidden;
+}
+
+.main a i {
+	font-size: 1.5rem;
+}
+
+
+/* Dash */
+
+.main-content {
+    max-width: 90%;
+	width: 90%;
+	margin:auto;
+	padding: 10px;
+	position: relative;
+}
+
+.dash-title h2 {
+	color: var(--design-three);
+	text-transform: uppercase;
+	font-size: 2rem;
+	margin-left: 1rem;
+	margin-bottom: .5rem;
+}
+
+.dash-title span {
+	color: var(--design);
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-left: 1rem;
+}
+
+hr {
+	margin-left: 1rem;
+	margin-right: 2rem;
+	border: 1px solid var(--design);
+	border-radius: 5px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjusted spacing */
+    align-items: flex-start;
+}
+
+.product {
+    width: 200px;
+    margin: 20px; /* Adjusted margin */
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-info {
+    margin-top: 10px;
+}
+
+.product-info p {
+    margin: 5px 0;
+}
+
+.product-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
